@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Migrar aliases a zimbra"
-date:   2022-04-20 22:19:23 -0300
+date:   2022-04-18 22:19:23 -0300
 categories: zimbra linux
 ---
 Si quieren migrar el archivo aliases a zimbra, usen este simple conversor:

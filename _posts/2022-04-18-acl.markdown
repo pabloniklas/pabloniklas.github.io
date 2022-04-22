@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "ACL"
+date:   2022-04-18 22:19:23 -0300
+categories: zimbra linux
+---
+
+## Introducción
+
+ Los archivos y directorios tienen conjuntos de permisos para el propietario del archivo, el grupo asociado con el archivo y todos los demás usuarios del sistema.
+Sin embargo, estos conjuntos de permisos tienen limitaciones. Por ejemplo, no se pueden configurar diferentes permisos para diferentes usuarios. Por lo tanto, se implementaron las listas de control de acceso (ACL).
+Junto con el soporte en el kernel, se requiere el paquete de herramientas de acl para implementar ACL. Estos paquetes contienen las utilidades utilizadas para agregar, modificar, eliminar y recuperar información de ACL.
+Los comandos cp y mv copian o mueven cualquier ACL asociada con archivos y directorios, ya que dicha información se almacena como conjunto de atributos extendidos (como SeLinux).
+
+## Como utilizar
+
+Antes de usar ACL para un archivo o directorio, la partición para el archivo o directorio debe montarse con soporte de ACL. En el caso que fuera un sistema de archivos ext3/ext4 local, puede montarse con el siguiente comando:
+
+### Sintaxis
+
+```shell
+mount -t ext3 -o acl nombreDispositivo puntoMontaje
+```
+
+### Ejemplo
+
+```shell
+mount -t ext3 -o acl /dev/VolGroup00/LogVol02 /compartido
+```
+
+## Configurando los accesos
+
+Hay dos tipos de ACL:
+
+* Las ACL de acceso
+* las ACL predeterminadas.
+
+Una *ACL de acceso* es la lista de control de acceso para un archivo o directorio específico.
+
+Una *ACL predeterminada* solo puede asociarse con un directorio; Si un archivo dentro del directorio no tiene una ACL de acceso, utiliza las reglas de la ACL predeterminada para el directorio.
+
+Las ACL predeterminadas son opcionales.
+
+ Las ACL se pueden configurar:
+
+* Por usuario.
+* Por grupo.
+* A través de la máscara de derechos efectivos.
+* Para usuarios que no están en el grupo de usuarios para el archivo.
+
+El comando ```setfacl``` establece ACL para archivos y directorios. Use la opción -m para agregar o modificar la ACL de un archivo o directorio.
+
+## Conclusión
+
+Las ACL son un recurso no tan conocido, que permite y complementa muchas de las ya características inherentes en los filesystems nativos para Unix/Linux.
