@@ -28,7 +28,7 @@ twitter_username: pabloniklas
 github_username: pabloniklas
 
 # Build settings
-remote-theme: pages-themes/minimal
+theme: minima
 plugins:
   - jekyll-feed
 # Exclude from processing.
