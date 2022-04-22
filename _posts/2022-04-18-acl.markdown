@@ -19,12 +19,14 @@ Antes de usar ACL para un archivo o directorio, la partición para el archivo o 
 ### Sintaxis
 
 ```shell
+
 mount -t ext3 -o acl nombreDispositivo puntoMontaje
 ```
 
 ### Ejemplo
 
 ```shell
+
 mount -t ext3 -o acl /dev/VolGroup00/LogVol02 /compartido
 ```
 
