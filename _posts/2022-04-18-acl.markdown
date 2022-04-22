@@ -2,7 +2,7 @@
 layout: post
 title:  "ACL"
 date:   2022-04-18 22:19:23 -0300
-categories: zimbra linux
+categories: acl linux
 ---
 
 ## Introducción
@@ -41,7 +41,7 @@ Una *ACL predeterminada* solo puede asociarse con un directorio; Si un archivo d
 
 Las ACL predeterminadas son opcionales.
 
- Las ACL se pueden configurar:
+Las ACL se pueden configurar:
 
 * Por usuario.
 * Por grupo.
