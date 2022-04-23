@@ -34,14 +34,8 @@ mount -t ext3 -o acl /dev/VolGroup00/LogVol02 /compartido
 
 Hay dos tipos de ACL:
 
-* Las ACL de acceso
-* las ACL predeterminadas.
-
-Una *ACL de acceso* es la lista de control de acceso para un archivo o directorio específico.
-
-Una *ACL predeterminada* solo puede asociarse con un directorio; Si un archivo dentro del directorio no tiene una ACL de acceso, utiliza las reglas de la ACL predeterminada para el directorio.
-
-Las ACL predeterminadas son opcionales.
+* Las ACL de acceso: es la lista de control de acceso para un archivo o directorio específico.
+* Las ACL predeterminadas:*solo puede asociarse con un directorio*. Si un archivo dentro del directorio no tiene una ACL de acceso, utiliza las reglas de la ACL predeterminada para el directorio. Las ACL predeterminadas son opcionales.
 
 Las ACL se pueden configurar:
 
@@ -50,7 +44,7 @@ Las ACL se pueden configurar:
 * A través de la máscara de derechos efectivos.
 * Para usuarios que no están en el grupo de usuarios para el archivo.
 
-El comando ```setfacl``` establece ACL para archivos y directorios. Use la opción -m para agregar o modificar la ACL de un archivo o directorio.
+El comando ```setfacl``` establece ACL para archivos y directorios. Por medio de la opción ```-m``` se para agregar o modificar la ACL de un archivo o directorio.
 
 ## Conclusión
 
