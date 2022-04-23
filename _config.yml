@@ -28,7 +28,8 @@ twitter_username: pabloniklas
 github_username: pabloniklas
 
 # Build settings
-remote_theme: Phlow/feeling-responsive
+# remote_theme: Phlow/feeling-responsive
+remote_theme: artemsheludko/flexible-jekyll
 plugins:
   - jekyll-feed
 # Exclude from processing.
