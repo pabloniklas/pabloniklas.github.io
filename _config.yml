@@ -30,6 +30,8 @@ permalink: /:title
 #twitter_username: pabloniklas
 #github_username: pabloniklas
 
+site-twitter: #if your site has a twitter account, enter it here
+
 # Author Settings
 author: Pablo Niklas # add your name
 author-img: pn_ninja.png # add your photo
@@ -39,6 +41,8 @@ social-facebook: # add your Facebook handle
 social-github: pabloniklas # add your Github handle
 social-linkedin: # add your Linkedin handle
 social-email:
+
+analytics: UA-45392322-2
 
 # Build settings
 # remote_theme: Phlow/feeling-responsive
