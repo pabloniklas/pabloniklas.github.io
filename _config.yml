@@ -24,14 +24,34 @@ description: >- # this means to ignore newlines until "baseurl:"
   Un blog donde dejo exposición de algunos temas, como así tambien, algunos trucos.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pabloniklas.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: pabloniklas
-github_username: pabloniklas
+
+#twitter_username: pabloniklas
+#github_username: pabloniklas
+
+# Author Settings
+author: Pablo Niklas # add your name
+author-img: pn_ninja.png # add your photo
+about-author: Graduate. University Teacher. Linux user from the begining. Retroinformatic lover. Besides from, photography, Jazz, Swing, and Classic Eurodance.
+social-twitter: pabloniklas
+social-facebook: # add your Facebook handle
+social-github: pabloniklas # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email:
 
 # Build settings
 # remote_theme: Phlow/feeling-responsive
+markdown: kramdown
 remote_theme: artemsheludko/flexible-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
