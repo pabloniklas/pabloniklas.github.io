@@ -2,6 +2,8 @@
 layout: post
 title:  "Migrar aliases a zimbra"
 date:   2022-04-18 12:19:23 -0300
+description: Migrar aliases de Linux a Zimbra.
+img: zimbra.png
 categories: zimbra linux
 ---
 Si quieren migrar el archivo aliases a zimbra, usen este simple conversor:
